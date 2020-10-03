@@ -1,10 +1,30 @@
-package com.webischia.api.model;
+package testModel.model;
 
+
+import java.util.Objects;
 
 public class TestModel {
     private String Id;
     private String name;
     private int value;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TestModel testModel = (TestModel) o;
+        return value == testModel.value &&
+                Objects.equals(Id, testModel.Id) &&
+                Objects.equals(name, testModel.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(Id, name, value);
+    }
+
+    public TestModel() {
+    }
 
     public TestModel(String id, String name, int value) {
         Id = id;

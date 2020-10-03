@@ -1,11 +1,11 @@
 package com.webischia.api.controllers;
 
-import com.webischia.api.model.TestModel;
 import com.webischia.api.services.TestModelService;
 import com.webischia.api.services.TestModelServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
+import testModel.model.TestModel;
 
 @RestController
 @RequestMapping("/")

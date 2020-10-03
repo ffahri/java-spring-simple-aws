@@ -1,10 +1,10 @@
 package com.webischia.api.services;
 
 import com.webischia.api.configurations.QueueConfiguration;
-import com.webischia.api.model.TestModel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
+import testModel.model.TestModel;
 
 @Component
 public class TestModelServiceImpl implements TestModelService {
